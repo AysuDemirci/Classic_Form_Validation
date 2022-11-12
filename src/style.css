@@ -1,0 +1,32 @@
+.login-line{
+    border: 1px solid black;
+    width: 550px;
+    height: 450px;
+
+}
+
+.allof{
+    position: relative;
+    margin-left: 35%;
+    margin-top: 13%;
+    margin-bottom: 10px;
+}
+
+.label-edit{
+    display: inline-block;
+    text-align: left;
+}
+
+
+.inside-edit{
+    padding-left: 110px;
+    padding-top: 100px ;
+}
+
+.name-input{
+    padding-left: 25px;
+}
+
+html{
+    background-color: black;
+}

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import InputColumn from "./Component/InputColumn";
+import FormValidation from "./Component/FormValidation";
 import "./style.css";
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <InputColumn/>
+        <FormValidation/>
       </div>
     );
   }

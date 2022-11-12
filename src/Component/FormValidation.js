@@ -1,14 +1,14 @@
 import React from 'react'
 import { Col, Form, FormGroup, Input, Label, Row } from 'reactstrap'
 
-const InputColumn = () => {
+const FormValidation = () => {
   return (
     <div className="allof">
         <Form className="login-line">
             <FormGroup row>
             <Col className="inside-edit">
             <Row>
-              <Label className='label-edit'>İsim Soyisim: <Input
+              <Label className='label-edit'>Username: <Input
                 className="name-input"
                 style={{ width: "300px" }}
                 type="text"
@@ -28,7 +28,7 @@ const InputColumn = () => {
             </Row>
 
             <Row>
-              <Label>Telefon Numarası:
+              <Label>Phone Number:
               <Input
                 className="name-input"
                 style={{ width: "300px" }}
@@ -45,4 +45,4 @@ const InputColumn = () => {
   )
 }
 
-export default InputColumn
+export default FormValidation

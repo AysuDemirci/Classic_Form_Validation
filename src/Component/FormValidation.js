@@ -20,9 +20,8 @@ function FormValidation() {
                   width: "300px",
                   marginLeft: "155px",
                   marginTop: "25px",
-                  borderWidth:"2px",
+                  borderWidth: "2px",
                 }}
-                
                 placeholder="Enter your Username"
               />
             </Col>
@@ -39,9 +38,8 @@ function FormValidation() {
                   width: "300px",
                   marginLeft: "155px",
                   marginTop: "25px",
-                  borderWidth:"2px",
+                  borderWidth: "2px",
                 }}
-               
                 placeholder="Enter your E-mail"
               />
             </Col>
@@ -58,9 +56,8 @@ function FormValidation() {
                   width: "300px",
                   marginLeft: "155px",
                   marginTop: "25px",
-                  borderWidth:"2px"
+                  borderWidth: "2px",
                 }}
-                
                 placeholder="Enter your Password"
               />
             </Col>
@@ -73,7 +70,7 @@ function FormValidation() {
                   borderColor: "#A4826D",
                   marginLeft: "29px",
                   marginTop: "30px",
-                  borderWidth:"2px",
+                  borderWidth: "2px",
                 }}
                 type="checkbox"
               />
@@ -84,13 +81,13 @@ function FormValidation() {
           </Row>
         </FormGroup>
         <Row>
-          <Button className="form-button"
+          <Button
+            className="form-button"
             style={{
               width: "200px",
               marginLeft: "150px",
               backgroundColor: "#031A3D",
-              color:"#A4826D"
-              
+              color: "#A4826D",
             }}
           >
             Create Account

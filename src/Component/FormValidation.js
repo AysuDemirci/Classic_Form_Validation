@@ -1,48 +1,101 @@
-import React from 'react'
-import { Col, Form, FormGroup, Input, Label, Row } from 'reactstrap'
+import React from "react";
+import { Button, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
 
-const FormValidation = () => {
+function FormValidation() {
   return (
-    <div className="allof">
-        <Form className="login-line">
-            <FormGroup row>
-            <Col className="inside-edit">
-            <Row>
-              <Label className='label-edit'>Username: <Input
-                className="name-input"
-                style={{ width: "300px" }}
+    <div>
+      <Form className="form-edit">
+        <h5 style={{ marginLeft: "160px", marginTop: "40px" }}>
+          Create a New Account
+        </h5>
+        <FormGroup className="formgroup-edit">
+          <Row>
+            <Col>
+              <Label className="label-edit">Username:</Label>
+              <Input
                 type="text"
-              /></Label>
-              
-            </Row>
+                style={{
+                  backgroundColor: "transparent",
+                  borderColor: "#A4826D",
+                  width: "300px",
+                  marginLeft: "155px",
+                  marginTop: "25px",
+                  borderWidth: "2px",
+                }}
+                placeholder="Enter your Username"
+              />
+            </Col>
+          </Row>
 
-            <Row>
-              <Label >E-mail: 
+          <Row>
+            <Col>
+              <Label className="label-edit">E-mail:</Label>
               <Input
-                className="name-input"
-                style={{ width: "300px" }}
                 type="email"
+                style={{
+                  backgroundColor: "transparent",
+                  borderColor: "#A4826D",
+                  width: "300px",
+                  marginLeft: "155px",
+                  marginTop: "25px",
+                  borderWidth: "2px",
+                }}
+                placeholder="Enter your E-mail"
               />
-              </Label>
-              
-            </Row>
+            </Col>
+          </Row>
 
-            <Row>
-              <Label>Phone Number:
+          <Row>
+            <Col>
+              <Label className="label-edit">Password:</Label>
               <Input
-                className="name-input"
-                style={{ width: "300px" }}
-                type="number"
+                type="password"
+                style={{
+                  backgroundColor: "transparent",
+                  borderColor: "#A4826D",
+                  width: "300px",
+                  marginLeft: "155px",
+                  marginTop: "25px",
+                  borderWidth: "2px",
+                }}
+                placeholder="Enter your Password"
               />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Input
+                style={{
+                  backgroundColor: "transparent",
+                  borderColor: "#A4826D",
+                  marginLeft: "29px",
+                  marginTop: "30px",
+                  borderWidth: "2px",
+                }}
+                type="checkbox"
+              />
+              <Label style={{ marginLeft: "15px", marginTop: "25px" }}>
+                I confirm my information
               </Label>
-            
-            </Row>
-          </Col>
-            </FormGroup>
-          
-        </Form>
-      </div>
-  )
+            </Col>
+          </Row>
+        </FormGroup>
+        <Row>
+          <Button
+            className="form-button"
+            style={{
+              width: "200px",
+              marginLeft: "150px",
+              backgroundColor: "#031A3D",
+              color: "#A4826D",
+            }}
+          >
+            Create Account
+          </Button>
+        </Row>
+      </Form>
+    </div>
+  );
 }
 
-export default FormValidation
+export default FormValidation;

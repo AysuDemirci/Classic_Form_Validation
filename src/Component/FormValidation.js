@@ -11,7 +11,7 @@ function FormValidation() {
         <FormGroup className="formgroup-edit">
           <Row>
             <Col>
-              <Label className="label-edit">Username:</Label>
+              <Label className="label-edit">Username: </Label>
               <Input
                 type="text"
                 style={{
@@ -29,7 +29,7 @@ function FormValidation() {
 
           <Row>
             <Col>
-              <Label className="label-edit">E-mail:</Label>
+              <Label className="label-edit">E-mail: </Label>
               <Input
                 type="email"
                 style={{
@@ -47,7 +47,7 @@ function FormValidation() {
 
           <Row>
             <Col>
-              <Label className="label-edit">Password:</Label>
+              <Label className="label-edit">Password: </Label>
               <Input
                 type="password"
                 style={{

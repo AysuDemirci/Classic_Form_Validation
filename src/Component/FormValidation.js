@@ -22,7 +22,7 @@ function FormValidation() {
                   marginTop: "25px",
                   borderWidth:"2px",
                 }}
-                className="ınput-edit"
+                
                 placeholder="Enter your Username"
               />
             </Col>
@@ -41,7 +41,7 @@ function FormValidation() {
                   marginTop: "25px",
                   borderWidth:"2px",
                 }}
-                className="ınput-edit"
+               
                 placeholder="Enter your E-mail"
               />
             </Col>
@@ -60,7 +60,7 @@ function FormValidation() {
                   marginTop: "25px",
                   borderWidth:"2px"
                 }}
-                className="ınput-edit"
+                
                 placeholder="Enter your Password"
               />
             </Col>

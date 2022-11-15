@@ -17,8 +17,15 @@
     
 }
 
+.h5-edit{
+    font-family: 'Lobster', cursive;
+
+}
+
 .formgroup-edit{
-    margin-top: 20px;
+    font-family: 'Kalam', cursive;
+    font-size: large;
+    margin-top: 15px;
 }
 
 html{

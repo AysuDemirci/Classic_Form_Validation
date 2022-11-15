@@ -1,19 +1,36 @@
-import React from "react";
+import React,{useState} from "react";
 import { Button, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
+import {validEmail,validUsername} from "../Rules/RegEx"
 
 function FormValidation() {
+
+  const [email, setEmail]= useState("")
+  const [username, setUsername]=useState("")
+  const[emailErr, setEmailErr]= useState(false)
+  const[usernameErr,setUsernameErr]=useState(false)
+  const validate =()=>{
+    if(!validEmail.test(email)){
+      setEmailErr(true);
+    };
+    if(!validUsername.test(username)){
+      setUsernameErr(true);
+    }
+  }
+
   return (
     <div>
       <Form className="form-edit">
-        <h5 style={{ marginLeft: "160px", marginTop: "40px" }}>
+        <h3 className="h5-edit" style={{ marginLeft: "150px", marginTop: "40px" }}>
           Create a New Account
-        </h5>
+        </h3>
         <FormGroup className="formgroup-edit">
           <Row>
             <Col>
               <Label className="label-edit">Username: </Label>
               <Input
                 type="text"
+                value={username}
+                onChange={(e)=>setUsername(e.target.value)}
                 style={{
                   backgroundColor: "transparent",
                   borderColor: "#A4826D",
@@ -23,7 +40,9 @@ function FormValidation() {
                   borderWidth: "2px",
                 }}
                 placeholder="Enter your Username"
+               
               />
+              {usernameErr && <p style={{color:"red", marginLeft:"160px",marginBottom:"-20px"}}>Your Username is invalid</p>}
             </Col>
           </Row>
 
@@ -32,6 +51,8 @@ function FormValidation() {
               <Label className="label-edit">E-mail: </Label>
               <Input
                 type="email"
+                value={email}
+                onChange={(e)=>setEmail(e.target.value)}
                 style={{
                   backgroundColor: "transparent",
                   borderColor: "#A4826D",
@@ -41,8 +62,11 @@ function FormValidation() {
                   borderWidth: "2px",
                 }}
                 placeholder="Enter your E-mail"
+                
               />
+              {emailErr && <p style={{color:"red", marginLeft:"160px",marginBottom:"-20px"}}>Your email is invalid</p>}
             </Col>
+            
           </Row>
 
           <Row>
@@ -59,6 +83,7 @@ function FormValidation() {
                   borderWidth: "2px",
                 }}
                 placeholder="Enter your Password"
+                
               />
             </Col>
           </Row>
@@ -82,15 +107,18 @@ function FormValidation() {
         </FormGroup>
         <Row>
           <Button
+          onClick={validate}
             className="form-button"
             style={{
               width: "200px",
               marginLeft: "150px",
               backgroundColor: "#031A3D",
               color: "#A4826D",
+              
             }}
           >
             Create Account
+            
           </Button>
         </Row>
       </Form>

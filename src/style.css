@@ -1,12 +1,12 @@
 .form-edit{
-    border: 1px solid ;
+    border: 1.5px solid ;
     border-radius: 10px;
     width: 500px;
     height: 430px;
     margin-left: 37%;
     margin-top: 15%;
     background-color:transparent;
-    border-color: #A4826D;
+    border-color: #1f6038;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -19,24 +19,23 @@
 
 .h5-edit{
     font-family: 'Lobster', cursive;
+    color: #1f6038;
 
 }
 
 .formgroup-edit{
-    font-family: 'Kalam', cursive;
+    /* font-family: 'Kalam', cursive; */
     font-size: large;
     margin-top: 15px;
 }
 
-html{
-    background-image: linear-gradient(to right, #031A3D, #A4826D,#F7E6DA);
-}
 
-.landing-page{
-    background-image: linear-gradient(to right, #031A3D, #A4826D,#F7E6DA);
-}
 
 .form-button{
     
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+input:invalid{
+    border-color: red;
 }

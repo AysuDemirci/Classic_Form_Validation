@@ -1,10 +1,10 @@
 .form-edit{
     border: 1.5px solid ;
-    border-radius: 10px;
+    border-radius: 50px;
     width: 500px;
     height: 430px;
-    margin-left: 37%;
-    margin-top: 15%;
+    margin-left: 38%;
+    margin-top: 14%;
     background-color:transparent;
     border-color: #1f6038;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -30,10 +30,20 @@
 }
 
 
-
-.form-button{
-    
+.form-button{ 
+    font-family: 'Lobster', cursive;
+    font-size:large ;
+    position: relative;
+    margin-left: 160px;
+    width:160px;
+    height:50px;
+    background-color: #1f6038;
+    color: lightgray;
+    border-radius: 40px;
+    border-width: 1px  ;
+    border-color: #1f6038;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    
 }
 
 input:invalid{

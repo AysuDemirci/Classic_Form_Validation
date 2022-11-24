@@ -1,11 +1,20 @@
 import React, { useState } from "react";
-import { Button, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
+import { Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
 import { validEmail, validUsername } from "../Rules/RegEx";
 
 function FormValidation() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
-  
+  const [style, setStyle] = useState(null);
+
+  const runAway = () => {
+    if (!validUsername.test(username) || !validEmail.test(email)) {
+      setStyle({
+        top: Math.round(Math.random() * 250) - 100 + "px",
+        left: Math.round(Math.random() * 250) - 200 + "px",
+      });
+    }
+  };
 
   return (
     <div>
@@ -38,9 +47,11 @@ function FormValidation() {
                   marginLeft: "155px",
                   marginTop: "25px",
                   borderWidth: "2px",
+                  borderRadius: "15px",
                 }}
                 autoComplete="off"
                 placeholder="Enter your Username"
+                required
               />
             </Col>
           </Row>
@@ -53,6 +64,7 @@ function FormValidation() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 style={{
+                  borderRadius: "15px",
                   backgroundColor: "transparent",
                   borderColor:
                     email !== ""
@@ -67,6 +79,7 @@ function FormValidation() {
                 }}
                 autoComplete="off"
                 placeholder="Enter your E-mail"
+                required
               />
             </Col>
           </Row>
@@ -83,6 +96,7 @@ function FormValidation() {
                   marginLeft: "155px",
                   marginTop: "25px",
                   borderWidth: "2px",
+                  borderRadius: "15px",
                 }}
                 placeholder="Enter your Password"
               />
@@ -105,22 +119,12 @@ function FormValidation() {
             </Col>
           </Row>
         </FormGroup>
-        <Row>
-          <Button
-            className="form-button"
-            style={{
-              width: "180px",
-              height: "50px",
-              marginLeft: "160px",
-              backgroundColor: "#1f6038",
-              color: "#fafafa",
-              position: "absolute",
-              zIndex: "1",
-            }}
-          >
+
+        <div>
+          <button onMouseOver={runAway} className="form-button" style={style}>
             Create Account
-          </Button>
-        </Row>
+          </button>
+        </div>
       </Form>
     </div>
   );

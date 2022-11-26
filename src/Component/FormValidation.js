@@ -99,6 +99,7 @@ function FormValidation() {
                   borderRadius: "15px",
                 }}
                 placeholder="Enter your Password"
+                required
               />
             </Col>
           </Row>

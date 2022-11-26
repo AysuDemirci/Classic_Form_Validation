@@ -1,6 +1,6 @@
 .form-edit{
     border: 1.5px solid ;
-    border-radius: 50px;
+    border-radius: 20px;
     width: 500px;
     height: 430px;
     margin-left: 38%;
@@ -16,6 +16,7 @@
     padding-left: 30px;
     
 }
+
 
 .h5-edit{
     font-family: 'Lobster', cursive;
